@@ -38,6 +38,7 @@ nav .ul1 .li1  a {
 .hamburger {
     display: none;
     cursor: pointer;
+    padding: 14px;
 }
 
 .ul1 {
@@ -96,7 +97,9 @@ h3 {
 
   @media (max-width: 600px) {
     .hamburger {
-        display: block;
+        display: flex;
+
+        flex-direction: row;
     }
     
     nav .ul1 {
