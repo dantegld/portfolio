@@ -10,6 +10,12 @@ header {
   padding: 10px;
 
 }
+.portfolio {
+  display: none;
+}
+.empty {
+width: 42.25px;
+}
 .b2 {
     width: 100vw;
     height: 100vh;
@@ -96,10 +102,26 @@ h3 {
   }
 
   @media (max-width: 600px) {
-    .hamburger {
-        display: flex;
+    .header {
+      display: flex;
+    }
+    .header1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100vw;
+      align-items: center;
+    }
+    .portfolio {
+      display: block;
+      color: #fff;
+      font-size: larger;
+    }
 
-        flex-direction: row;
+    .hamburger {
+      color: #fff;
+        font-size: larger;
+        display: flex;
     }
     
     nav .ul1 {
@@ -108,6 +130,13 @@ h3 {
     
     nav .ul1.open {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+
         flex-direction: column;
     }
 }
